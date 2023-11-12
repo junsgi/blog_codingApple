@@ -4,8 +4,8 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  // state는 자동 재렌더링 변동시 자동으로 html에 반영되게 만들고싶으면 (자주 바뀌는 요소 char)
-  // 변수 : 자동 재렌더링 안됨 (자주 안 바뀜 varchar2)
+  // state는 자동 재렌더링 변동시 자동으로 html에 반영되게 만들고 싶으면 사용
+  // 변수 : 자동 재렌더링 안 됨, 자주 안 바뀌면 사용
   let [subTitle, subTitleSet] = useState(['자바 공부', '알고리즘 공부', '쇼핑']);
   let [likeCnt, likeCntSet] = useState([0, 0, 0])
   let [modal, modalSet] = useState(false);
@@ -72,7 +72,7 @@ function App() {
 }
 
 // 컴포넌트
-// 1. 함수 ( 다른 함수 바깥에다가 만듦)
+// 1. 대문자로 시작
 // 2. return () 안에 HTML
 // 3. <함수></함수>
 // 의미없는 div but 하나로 묶어야 한다면 <></>
@@ -80,7 +80,6 @@ function App() {
 // 큰 페이지들 반환할 때
 // 자주 변경된다면
 // 반복적 html 축약
-// state 가져다 쓸 때 문제생김
 function Modal(props){
   return (
     <div className='Modal'>
