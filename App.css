@@ -1,0 +1,80 @@
+.App{
+  text-align : center;
+}
+.inputZone{
+  margin-top : 30px;
+  margin-bottom: 30px;
+}
+
+.inputZone input{
+  padding: 10px;
+  font-size : 16px;
+  border-radius : 10px;
+  width : 80%;
+  border : 1px solid grey;
+}
+
+.inputZone button{
+  display: block;
+  margin : auto;
+  margin-top : 10px;
+}
+
+.App-Nav{
+  background-color: #282c34;
+  display: flex;
+  text-align :start;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding-left : 10px;
+}
+
+.list{
+  text-align :start;
+  padding: 15px;
+  border-bottom: solid black 2px;
+}
+
+span{
+  margin-left : 5px;
+
+}
+.Modal{
+  background-color: #eee;
+  text-align: center;
+  margin-top : 10px;
+  margin-left : 50px;
+  margin-right : 50px;
+  padding: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
